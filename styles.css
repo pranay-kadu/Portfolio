@@ -1038,7 +1038,7 @@ section {
         flex-direction: column-reverse;
         text-align: center;
         gap: 3rem;
-        padding-top: 18rem;
+        padding-top: 15rem;
     }
 
     .home-content {
@@ -1169,7 +1169,7 @@ section {
 
     /* Home */
     .home {
-        padding-top: 18rem;
+        padding-top: 15rem;
     }
 
     .home-img img {
