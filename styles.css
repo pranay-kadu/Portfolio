@@ -1118,7 +1118,7 @@ section {
 
     .portfolio {
         min-height: auto;
-        padding-bottom: 0;
+        padding-bottom: 3rem;
     }
 
     .portfolio-container {
