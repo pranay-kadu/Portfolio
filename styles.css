@@ -1073,9 +1073,9 @@ section {
         justify-content: center;
     }
 
-    /* ── Stack robot on top of CV button and center them ── */
+    /* ── Stack CV button on top of robot and center them ── */
     .cv-robot-row {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2.5rem;
