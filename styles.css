@@ -1116,7 +1116,11 @@ section {
         min-height: 30rem;
     }
 
-    /* ── Portfolio — single column ── */
+    .portfolio {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+
     .portfolio-container {
         grid-template-columns: 1fr;
     }
