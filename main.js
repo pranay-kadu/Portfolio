@@ -271,3 +271,26 @@ if (themeToggle) {
         }
     });
 }
+/*================================ Mobile Menu Auto-Close ===================== */
+// Close menu when clicking a navigation link
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+        menuIcon.classList.remove('fa-xmark');
+        navbar.classList.remove('active');
+    });
+});
+
+// Close menu when clicking anywhere completely outside the header
+document.addEventListener('click', (e) => {
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+    
+    if (navbar && navbar.classList.contains('active')) {
+        if (!menuIcon.contains(e.target) && !navbar.contains(e.target) && !e.target.closest('#theme-toggle')) {
+            menuIcon.classList.remove('fa-xmark');
+            navbar.classList.remove('active');
+        }
+    }
+});
