@@ -1073,6 +1073,14 @@ section {
         justify-content: center;
     }
 
+    /* ── Stack robot on top of CV button and center them ── */
+    .cv-robot-row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
     /* ── Heading ── */
     .heading {
         font-size: 3.8rem;
