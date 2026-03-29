@@ -247,3 +247,27 @@ const typed = new Typed(".multiple-text", {
   }
   animate();
 })();
+
+/*================================ Theme Toggle ===================== */
+const themeToggle = document.getElementById("theme-toggle");
+if (themeToggle) {
+    // Load saved theme
+    const savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.classList.replace("fa-moon", "fa-sun");
+    }
+
+    // Toggle and save
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        
+        if (document.body.classList.contains("light-mode")) {
+            themeToggle.classList.replace("fa-moon", "fa-sun");
+            localStorage.setItem("portfolio-theme", "light");
+        } else {
+            themeToggle.classList.replace("fa-sun", "fa-moon");
+            localStorage.setItem("portfolio-theme", "dark");
+        }
+    });
+}

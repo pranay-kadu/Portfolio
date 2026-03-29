@@ -1255,3 +1255,111 @@ section {
         font-size: 1.5rem;
     }
 }
+
+/* ========================================================
+   LIGHT MODE OVERRIDES
+   ======================================================== */
+body.light-mode {
+    background: #f0f4f8;
+    color: #1a202c;
+    --text-color: #1a202c;
+    --bg-color: #ffffff;
+    --snd-bf-color: #e2e8f0;
+}
+
+body.light-mode .header {
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .navbar {
+    background: var(--bg-color);
+}
+
+body.light-mode .heading,
+body.light-mode .home-content h3,
+body.light-mode .gradient-name,
+body.light-mode .multiple-text {
+    background: linear-gradient(135deg, #1a202c 0%, #2b6cb0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-mode .heading span {
+    background: linear-gradient(135deg, #2b6cb0 0%, #2b6cb0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-mode .btn {
+    color: #ffffff;
+    background: #2b6cb0;
+    box-shadow: 0 0 1rem rgba(43, 108, 176, 0.4);
+}
+
+body.light-mode .btn:hover {
+    box-shadow: none;
+}
+
+body.light-mode section {
+    border-top: 0.1rem solid rgba(43, 108, 176, 0.1);
+}
+
+body.light-mode .social-pill,
+body.light-mode .about-card,
+body.light-mode .about-bio-box,
+body.light-mode .services-box,
+body.light-mode .edu-card,
+body.light-mode #contactForm input,
+body.light-mode #contactForm textarea {
+    background: rgba(43, 108, 176, 0.05);
+    border-color: rgba(43, 108, 176, 0.15);
+    color: var(--text-color);
+}
+
+body.light-mode .portfolio-layer {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), #2b6cb0);
+    color: #1a202c;
+}
+
+body.light-mode .portfolio-layer p {
+    color: #1a202c;
+    font-weight: 600;
+}
+
+body.light-mode .tech-box {
+    background-color: rgba(43, 108, 176, 0.08);
+    border-color: rgba(43, 108, 176, 0.2);
+    color: #1a202c;
+}
+
+body.light-mode .about-card p,
+body.light-mode .about-bio-box p,
+body.light-mode .edu-card .institute {
+    color: #4a5568;
+}
+
+body.light-mode .social-pill i,
+body.light-mode .about-card-icon i,
+body.light-mode .services-box i {
+    color: #2b6cb0;
+}
+
+body.light-mode .footer {
+    background: var(--bg-color);
+}
+
+body.light-mode .modal-box {
+    background: #ffffff;
+    border-color: rgba(43, 108, 176, 0.2);
+}
+
+body.light-mode .modal-box h3 {
+    color: #1a202c;
+}
+
+body.light-mode .modal-box p {
+    color: #4a5568;
+}
