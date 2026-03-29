@@ -1038,12 +1038,13 @@ section {
         flex-direction: column-reverse;
         text-align: center;
         gap: 3rem;
-        padding-top: 12rem;
+        padding-top: 16rem;
     }
 
     .home-content {
         order: 2;
         max-width: 100%;
+        margin-top: 0;
     }
 
     .home-img {
@@ -1071,14 +1072,6 @@ section {
 
     .social-media {
         justify-content: center;
-    }
-
-    /* ── Stack CV button on top of robot and center them ── */
-    .cv-robot-row {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2.5rem;
     }
 
     /* ── Heading ── */
